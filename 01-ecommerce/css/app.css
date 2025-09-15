@@ -14,6 +14,12 @@ a {
     color: black;
 }
 
+.contenedor {
+    max-width: 1200px;
+    margin: 0 auto;
+    width: 90%;
+}
+
 /* Header y Navegation */
 .nombre-sitio {
     margin-top: 50px;
@@ -25,14 +31,17 @@ a {
     color: #037bc0;
 }
 
-.nav-principal {
+.contenedor-navegacion {
     border-top: 1px solid #e1e1e1;
+}
+
+.nav-principal {
     padding: 20px 0;
 }
 
-/* Box Model */
-.sobre-nosotros {
-    background-color: aqua;
-    width: 200px;
-    padding: 25px;
+.hero{
+    background-image: url('../img/principal.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 550px;
 }
