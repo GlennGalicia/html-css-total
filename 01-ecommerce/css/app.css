@@ -330,3 +330,43 @@ img {
     width: 40rem;
     object-fit: cover;
 }
+
+/* Form Page */
+
+.formulario {
+    max-width: 60rem;
+    margin: 0 auto;
+}
+
+.formulario fieldset {
+    border: 1px solid black;
+    margin-bottom: 2rem;
+}
+
+.formulario legend {
+    background-color: #005485;
+    width: 100%;
+    color: white;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 900;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.campo {
+    display: flex;
+    margin-bottom: 2rem;
+}
+
+.campo label {
+    flex-basis: 10rem;
+}
+
+.campo input:not([type="radio"]),
+.campo select,
+.campo textarea {
+    flex: 1;
+    border: 1px solid #e1e1e1;
+    padding: 1rem;
+}
