@@ -215,3 +215,11 @@ h2 {
 .grid-10 .box:nth-child(5) {
     grid-area: footer;
 }
+
+/* grid align items */
+.grid-11 {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    height: 30rem;
+    align-items: center;
+}
