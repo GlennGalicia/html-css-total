@@ -188,7 +188,7 @@ h2 {
         "nav nav nav" 1fr
         "contenido contenido sidebar" 6fr
         "footer footer footer" 2.5fr / 1fr 1fr 1fr
-        ;
+    ;
     gap: 4rem;
 }
 
@@ -222,4 +222,10 @@ h2 {
     grid-template-columns: repeat(6, 1fr);
     height: 30rem;
     align-items: center;
+}
+
+/* grid auto fit */
+.grid-12 {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
