@@ -3,13 +3,15 @@
     --blanco: #FFF;
     --naranja: #ff4f1e;
 }
+
 html {
-    font-size: 62.5%; /** 1REM = 10pX **/
+    font-size: 62.5%;
+    /** 1REM = 10pX **/
 }
 
 body {
     background-color: var(--azul);
-    font-family:  'Lato', sans-serif;
+    font-family: 'Lato', sans-serif;
     font-size: 1.6rem;
 }
 
@@ -20,12 +22,15 @@ body {
     padding: 5rem;
 
 }
+
 .caja-curso h1 {
     margin: 0;
 }
+
 .caja-curso p {
     font-size: 2.4rem;
 }
+
 .caja-curso a {
     font-size: 2.4rem;
     padding: 2rem;
@@ -36,7 +41,8 @@ body {
 }
 
 
-h1, h2 {
+h1,
+h2 {
     color: var(--blanco);
     text-align: center;
     margin: 5rem 0;
@@ -46,6 +52,7 @@ h1, h2 {
     max-width: 120rem;
     margin: 0 auto;
 }
+
 .box {
     background-color: var(--naranja);
     color: var(--blanco);
@@ -55,4 +62,21 @@ h1, h2 {
     align-items: center;
     font-size: 4rem;
     margin-bottom: 2rem;
+}
+
+/* grid definition */
+
+.grid-1 {
+    display: grid;
+}
+
+/* grid column definition and child position */
+
+.grid-2 {
+    display: grid;
+    grid-template-columns: 300px 300px 300px;
+}
+
+.grid-2 .box:nth-child(2) {
+    grid-column: 1 / 2;
 }
