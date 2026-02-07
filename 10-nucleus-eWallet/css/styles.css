@@ -128,6 +128,10 @@ img {
     }
 }
 
+.navegacion__link--blanco {
+    color: var(--blanco);
+}
+
 /* sección inferior */
 @media (min-width: 992px) {
     .header__grid {
@@ -367,4 +371,28 @@ img {
     font-weight: 700;
     text-align: right;
     margin: 0;
+}
+
+/* sección footer */
+.footer {
+    background-color: #5A30a0;
+    padding: 3rem 0;
+}
+
+.footer__logo {
+    width: 20rem;
+    margin: 0 auto 4rem auto;
+}
+
+@media (min-width: 992px) {
+    .footer__grid {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .footer__logo {
+        margin: 0;
+    }
 }
