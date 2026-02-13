@@ -22,4 +22,4 @@ yarn-error.log*
 package-lock.json
 
 # Imágenes originales (procesadas localmente con Gulp)
-src/img/
+11-cafeteria/src/img/
