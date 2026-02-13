@@ -19,29 +19,25 @@ function css(done) {
    done()
 }
 
-function images(done) {
+function images() {
    // Carga la carpeta imagenes
-   src('src/img/**/*')
-      .pipe(imagemin({ optimizationLevel: 3 }))
+   return src('src/img/**/*')
+      .pipe(imagemin())
       .pipe(dest('build/img'))
-
-   done()
 }
 
-function imgWebp(done) {
+function imgWebp() {
    // Convierte imagenes a formato .webp
-   src('src/img/**/*.{jpg,png}')
+   return src('src/img/**/*.{jpg}')
       .pipe(webp())
       .pipe(dest('build/img'))
-   done()
 }
 
-function imgAvif(done) {
+function imgAvif() {
    // Convierte imagenes a formato .avif
-   src(['src/img/**/*.{png,jpg}', '!src/img/**/*.svg'])
+   return src(['src/img/**/*.{png,jpg}', '!src/img/**/*.svg'])
       .pipe(avif({ quality: 50 }))
       .pipe(dest('build/img'))
-   done()
 }
 
 function dev() {
