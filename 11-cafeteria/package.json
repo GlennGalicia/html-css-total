@@ -12,8 +12,11 @@
   "devDependencies": {
     "autoprefixer": "^10.4.24",
     "gulp": "^5.0.1",
+    "gulp-avif": "^1.1.1",
+    "gulp-imagemin": "^7.1.0",
     "gulp-postcss": "^10.0.0",
     "gulp-sass": "^6.0.1",
+    "gulp-webp": "^4.0.1",
     "postcss": "^8.5.6",
     "sass": "^1.97.3"
   },
