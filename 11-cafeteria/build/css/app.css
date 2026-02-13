@@ -82,7 +82,7 @@ abbr[title] {
   text-decoration: underline;
   /* 2 */
   -webkit-text-decoration: underline dotted;
-  text-decoration: underline dotted;
+          text-decoration: underline dotted;
   /* 2 */
 }
 
@@ -192,7 +192,6 @@ button,
 [type=reset],
 [type=submit] {
   -webkit-appearance: button;
-  appearance: button;
 }
 
 /**
@@ -285,7 +284,6 @@ textarea {
 [type=search] {
   -webkit-appearance: textfield;
   /* 1 */
-  appearance: textfield;
   outline-offset: -2px;
   /* 2 */
 }
@@ -411,15 +409,97 @@ a {
 }
 
 .bg-primario {
-  background-color: #E8505B;
+  background-color: #5E311E;
 }
 
 /* header section */
 .header {
-  color: black;
+  padding: 5rem 0;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .header {
+    min-height: 70rem;
+  }
+}
+.header::before {
+  content: "";
+  position: absolute;
+  background-color: #000;
+  opacity: 0.6;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+.header__initial {
+  background-image: url(../img/header_inicio.jpg);
+  background-repeat: no-repeat;
+}
+.header__container {
+  position: relative;
+}
+.header__container h1 {
+  color: #FFF;
+  margin-top: 5rem;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (min-width: 768px) {
+  .header__container h1 {
+    margin-top: 10rem;
+  }
+}
+.header__barra {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 768px) {
+  .header__barra {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+.logo {
+  width: 50%;
+  margin: 0 auto;
+}
+@media (min-width: 768px) {
+  .logo {
+    width: 200px;
+    margin: 0;
+  }
 }
 
 /* navegacion section*/
-.navegacion {
-  color: black;
+.nav-principal {
+  display: flex;
+  flex-direction: column;
+  margin-top: 5rem;
+}
+.nav-principal a {
+  color: #FFF;
+  margin-bottom: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+.nav-principal a:hover {
+  color: #C39C63;
+}
+.nav-principal .activo {
+  color: #C39C63;
+}
+@media (min-width: 768px) {
+  .nav-principal {
+    margin-top: 0;
+    flex-direction: row;
+    gap: 1rem;
+  }
+  .nav-principal a {
+    margin-bottom: 0;
+  }
 }
