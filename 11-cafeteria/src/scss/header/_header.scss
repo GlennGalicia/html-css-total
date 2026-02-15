@@ -28,6 +28,13 @@
       }
    }
 
+   &__nosotros {
+      background: {
+         image: url(../img/header_nosotros.jpg);
+         repeat: no-repeat;
+      }
+   }
+
    &__container {
       position: relative;
 
