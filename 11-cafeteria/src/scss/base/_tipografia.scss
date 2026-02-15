@@ -43,6 +43,20 @@ h2 {
    }
 }
 
+.heading-blanco {
+   @extend h2;
+   color: v.$blanco;
+
+   span {
+      color: v.$blanco;
+   }
+
+   &::after {
+      display: none;
+   }
+
+}
+
 h3 {
    font-size: 3.2rem;
 }
