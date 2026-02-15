@@ -481,6 +481,10 @@ h3 {
   background-image: url(../img/header_inicio.jpg);
   background-repeat: no-repeat;
 }
+.header__nosotros {
+  background-image: url(../img/header_nosotros.jpg);
+  background-repeat: no-repeat;
+}
 .header__container {
   position: relative;
 }
@@ -773,4 +777,35 @@ h3 {
   padding: 2rem;
   text-align: center;
   color: #FFF;
+}
+
+/* nosotros section */
+@media (min-width: 768px) {
+  .nosotros__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 5rem;
+    align-items: center;
+  }
+}
+
+.nosotros__img {
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .nosotros__img {
+    margin-bottom: 0;
+  }
+}
+.nosotros__img img {
+  transform: rotate(-6deg);
+  border: 3rem solid #FFF;
+  box-shadow: 9px 10px 5px -7px rgb(0, 0, 0);
+}
+
+.nosotros__texto blockquote {
+  margin: 0;
+  padding: 1rem;
+  border-left: 5px solid #5E311E;
+  font-size: 2rem;
 }
