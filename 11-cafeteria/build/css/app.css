@@ -485,6 +485,10 @@ h3 {
   background-image: url(../img/header_nosotros.jpg);
   background-repeat: no-repeat;
 }
+.header__proceso {
+  background-image: url(../img/header_proceso.jpg);
+  background-repeat: no-repeat;
+}
 .header__container {
   position: relative;
 }
@@ -808,4 +812,41 @@ h3 {
   padding: 1rem;
   border-left: 5px solid #5E311E;
   font-size: 2rem;
+}
+
+/* proceso section */
+@media (min-width: 768px) {
+  .proceso-cafe {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+  }
+  .proceso-cafe .imagen,
+  .proceso-cafe .texto {
+    flex: 1;
+  }
+}
+.proceso-cafe {
+  margin-bottom: 5rem;
+}
+.proceso-cafe:last-of-type {
+  margin-bottom: 0;
+}
+.proceso-cafe:nth-child(even) .texto {
+  order: -1;
+}
+.proceso-cafe .texto {
+  margin-top: 1rem;
+}
+.proceso-cafe .texto h3 {
+  margin: 0;
+  text-align: left;
+  color: #5E311E;
+}
+.proceso-cafe .texto h3::after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 2px;
+  background-color: #C39C63;
 }
