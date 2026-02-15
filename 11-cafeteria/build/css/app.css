@@ -393,6 +393,7 @@ ul {
 
 h1,
 h2,
+.heading-blanco,
 h3 {
   font-family: "Raleway", sans-serif;
   margin-bottom: 0 0 50rem 0;
@@ -405,16 +406,16 @@ h1 {
   font-size: 4rem;
 }
 
-h2 {
+h2, .heading-blanco {
   font-size: 3.6rem;
   color: #5E311E;
 }
-h2 span {
+h2 span, .heading-blanco span {
   color: #C39C63;
   font-size: 1.8rem;
   display: block;
 }
-h2::after {
+h2::after, .heading-blanco::after {
   content: "";
   display: block;
   width: 10rem;
@@ -423,6 +424,16 @@ h2::after {
   background-image: url(../img/cafe.svg);
   background-size: 10rem;
   background-repeat: no-repeat;
+}
+
+.heading-blanco {
+  color: #FFF;
+}
+.heading-blanco span {
+  color: #FFF;
+}
+.heading-blanco::after {
+  display: none;
 }
 
 h3 {
@@ -638,4 +649,55 @@ h3 {
   .galery__item:nth-child(10) img {
     width: 62rem;
   }
+}
+
+/* menu section */
+.nuestro-menu {
+  padding: 15rem 2rem 20rem 2rem;
+  background-image: url(../img/menu_arriba.svg), url(../img/menu_abajo.svg), linear-gradient(to top, #5E311E, #5E311E);
+  background-repeat: no-repeat;
+  background-position: center 5rem, center 92%, 100%;
+  background-size: 200%;
+}
+@media (min-width: 768px) {
+  .nuestro-menu {
+    padding: 15rem 0 20rem 0;
+    background-size: 100%;
+  }
+}
+@media (min-width: 1024px) {
+  .nuestro-menu {
+    background-size: 50%, 50%, 100%;
+  }
+}
+@media (min-width: 768px) {
+  .nuestro-menu__grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+}
+
+.menu h3 {
+  color: #FFF;
+}
+.menu li {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu li p {
+  color: #FFF;
+  font-size: 2.3rem;
+  line-height: 1.5;
+  margin: 0 0 2rem 0;
+}
+.menu li p span {
+  display: block;
+  color: #C39C63;
+}
+.menu li .precio {
+  font-size: 4rem;
+  font-weight: 700;
 }
