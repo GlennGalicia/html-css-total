@@ -396,7 +396,7 @@ h2,
 .heading-blanco,
 h3 {
   font-family: "Raleway", sans-serif;
-  margin-bottom: 0 0 50rem 0;
+  margin-bottom: 0 0 5rem 0;
   text-transform: uppercase;
   text-align: center;
   line-height: 1.5;
@@ -731,4 +731,46 @@ h3 {
   font-size: 2.4rem;
   color: #5E311E;
   font-family: "Bona Nova", serif;
+}
+
+/* footer section */
+.footer {
+  background-color: #5E311E;
+}
+.footer__container {
+  padding: 5rem;
+}
+@media (min-width: 768px) {
+  .footer__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+  }
+}
+.footer__box {
+  font-family: "Bona Nova", serif;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+@media (min-width: 768px) {
+  .footer__box {
+    margin-bottom: 0;
+  }
+}
+.footer__box h3 {
+  font-family: "Bona Nova", serif;
+  font-size: 2.4rem;
+  margin: 0 0 1rem 0;
+  color: #C39C63;
+}
+.footer__box p,
+.footer__box a {
+  font-size: 2rem;
+  margin: 0;
+}
+.footer .copyright {
+  margin: 0;
+  padding: 2rem;
+  text-align: center;
+  color: #FFF;
 }
